@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Unicari-Med</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="display-4 pt-3 pb-3 text-light">Unicari-Med</h1>
+        </div class="container">
+    </header>
+    <div class="container mt-4">
+        <form id="medic-form">
+            <p class="explanation">
+                Preencha os dados abaixo para gerar o receituário médico.
+            </p>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Nome do paciente</label>
+                    <input type="email" class="form-control" id="inputName" placeholder="Nome do paciente"
+                        name="patientName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCellphone">Telefone celular do paciente</label>
+                    <input type="tel" class="form-control" id="inputCellphone"
+                        placeholder="Telefone celular do paciente" name="patientCellphone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">E-mail do paciente</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="E-mail do paciente"
+                    name="patientEmail">
+            </div>
+
+            <p class="medicineExplanation">
+                Preencha os dados abaixo para adicionar um medicamento ao receituário médico,
+                para adicionar um novo medicamento é só clicar no botão <strong>+</strong>.
+            </p>
+
+            <div id="medicineList">
+
+            </div>
+
+            <button type="submit" class="btn btn-danger float-right mt-4">Gerar receituário</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="./scripts/medicine.js"></script>
+</body>
+
+</html>
