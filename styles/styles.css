@@ -1,3 +1,7 @@
+body {
+    padding-bottom: 4rem;
+}
+
 .header {
     background-color: rgb(157, 27, 27);
 }
